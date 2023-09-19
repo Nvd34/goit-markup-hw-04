@@ -54,6 +54,9 @@ body {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* Header */
@@ -85,18 +88,14 @@ body {
   gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.studio-hover {
-  position: relative;
-}
+
 .studio-hover::after {
   display: block;
   position: absolute;
   width: 100%;
   bottom: -1px;
   border-radius: 2px;
-
   background: #404bbf;
-
   height: 4px;
   content: "";
 }
@@ -127,6 +126,11 @@ body {
   font-style: normal;
 }
 
+.studio-hover {
+  position: relative;
+  color: #404bbf;
+}
+
 .address-list-item {
   color: #434455;
 
@@ -154,6 +158,13 @@ body {
   background: #f4f4fd;
 }
 .hero {
+  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-hero.jpg);
+
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -162,12 +173,6 @@ body {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
-  background: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-hero.jpg);
 }
 
 .main-title {
@@ -279,7 +284,9 @@ body {
 }
 .benefits-icon-container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 112px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
@@ -299,8 +306,8 @@ body {
 }
 .employees-foto-text {
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 8px;
+
+  padding: 32px 0;
 }
 .employees-social-icon {
   fill: #f4f4fd;
@@ -348,10 +355,7 @@ body {
   background: #4d5ae5;
   position: absolute;
   transform: translateY(100%);
-  padding-top: 40px;
-  padding-bottom: 164px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -393,6 +397,11 @@ body {
   padding-top: 100px;
   background: #2e2f42;
 }
+
+.footer-logotype-container {
+  margin-right: 120px;
+}
+
 .footer-text {
   color: #f4f4fd;
   width: 264px;
@@ -423,16 +432,15 @@ body {
 .all-footer {
   display: flex;
   justify-content: left;
+  align-items: baseline;
 }
 .footer-list {
   display: flex;
   margin-bottom: 120px;
   margin-top: 16px;
-  margin-left: 120px;
   gap: 16px;
 }
 .footer-social-media {
-  margin-left: 120px;
   color: #fff;
 
   font-size: 16px;
@@ -441,9 +449,14 @@ body {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+.footer-img-item {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-img {
   background-color: #4d5ae5;
-  padding: 12px;
+
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -463,18 +476,23 @@ body {
 
 .employees-list {
   display: flex;
-  gap: 24px;
-  margin: 16px;
-  margin-bottom: 32px;
-}
-.employees-icon-social-container {
-  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
 }
+
+.employees-social-list-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .employees-img {
   /* fill: #f4f4fd; */
   background-color: #4d5ae5;
   padding: 12px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
