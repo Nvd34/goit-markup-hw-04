@@ -403,6 +403,7 @@ body {
 }
 
 .footer-text {
+  margin-bottom: 16px;
   color: #f4f4fd;
   width: 264px;
   /* Body */
@@ -410,7 +411,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
 }
 
 .logotype-footer {
