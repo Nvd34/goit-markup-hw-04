@@ -410,6 +410,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .logotype-footer {
@@ -424,7 +425,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 .class-span-footer {
